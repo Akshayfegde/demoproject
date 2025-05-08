@@ -1,0 +1,196 @@
+
+
+/* home page background  */
+body{
+	background:lavenderblush;
+}
+
+.bg-primary{
+	background:#009688!important;
+}
+
+.banner{
+	width:100%;
+	height:93vh;
+	background:Linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(../image/back.jpg);
+	background-size:cover;
+	color:white;	
+}
+
+/* signup  */
+.my-card{
+	padding:20px;
+	background:#FFFFFF;
+}
+#content {
+	 margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.row {
+    justify-content: center;
+}
+
+.col-md-8 {
+    text-align: center;
+}
+
+h1.text-center {
+    /* हेडिंगची स्टाईल */
+     white-space: nowrap; /* टेक्स्ट एकाच ओळीत ठेवण्यासाठी (जर गरज वाटली तर) */
+}
+
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 420px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+
+/* signup */
+
+
+/* /* Sidebar */
+.sidebar {
+    width: 18%; तुमच्या गरजेनुसार रुंदी बदला
+    background-color: #f8f9fa; 
+    height: 100vh; संपूर्ण उंचीसाठी (व्ह्यू पोर्ट हाईट)
+    position: fixed; स्क्रोल करताना जागा स्थिर ठेवण्यासाठी
+    top: 0;
+    left: 0;
+    padding-top: 70px; तुमच्या नेव्हबारची उंची
+    overflow-x: hidden; आडवी स्क्रोलबार लपवण्यासाठी
+    box-shadow: 1px 0px 5px #ccc; हलकी बॉर्डर/शॅडो
+}
+
+
+.container {
+  display: flex; साइडबार आणि कंटेंट बाजूबाजूला ठेवण्यासाठी
+}
+
+.sidebar {
+  width: 18%;
+  इतर साइडबार स्टाईल्स
+}
+
+.content {
+  margin-left: 18%; साइडबारच्या रुंदीनुसार मार्जिन
+  padding: 20px;
+}
+Sidebar
+
+
+
+Sidebar links
+.sidebar a {
+    display: block; प्रत्येक लिंक नवीन ओळीवर दिसेल (महत्वाचे!)
+    padding: 10px 20px; लिंकच्या भोवती पॅडिंग
+    text-decoration: none; अंडरलाईन काढण्यासाठी
+    color: #495057; टेक्स्टचा रंग
+    transition: 0.3s; Hover इफेक्टसाठी स्मूथ ट्रांझिशन
+    width: 100%; लिंक संपूर्ण रुंदी घेईल
+    box-sizing: border-box; पॅडिंगमुळे रुंदी वाढणार नाही
+}
+
+.sidebar a:hover {
+    background-color: #e9ecef; Hover केल्यावर हलका ग्रे रंग
+    color: #007bff; Hover केल्यावर टेक्स्टचा रंग
+}
+
+डीफॉल्ट स्टाईल्स - मोठ्या स्क्रीनसाठी लागू होतील (आणि लहान स्क्रीनवर जोपर्यंत ओवरराईड होत नाहीत तोपर्यंत)
+.sidebar {
+    width: 18%;
+    background-color: #f8f9fa;
+    height: 90vh;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    overflow-x: hidden;
+    box-shadow: 1px 0px 5px #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.content {
+    margin-left: 18%;
+    padding: 20px;
+    padding-top: 70px;
+}
+
+लहान स्क्रीनसाठी (600px पर्यंत) स्टाईल्स - मोठ्या स्क्रीनवरील स्टाईल्सना ओवरराईड करतील
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        margin-top: 0;
+        display: block;
+        box-shadow: none;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 15px;
+        padding-top: 60px;
+    }
+}
+
+.sidebar .crossBtn {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 36px;
+        cursor: pointer;
+        color: #555;
+    }
+
+/* Content
+.content {
+    margin-left: 18%; साइडबारच्या रुंदीनुसार मार्जिन
+    padding: 20px;
+    padding-top: 70px; नेव्हबारची उंची
+}
+.sidebar {
+    width: 18%; तुमच्या गरजेनुसार रुंदी बदला
+    background-color: #f8f9fa; हलका ग्रे रंग किंवा तुमच्या आवडीनुसार
+    height: 90vh; संपूर्ण उंचीसाठी (व्ह्यू पोर्ट हाईट)
+    position: fixed; स्क्रोल करताना जागा स्थिर ठेवण्यासाठी
+    top: 0;
+    left: 0;
+    padding-top: 70px; तुमच्या नेव्हबारची उंची
+    overflow-x: hidden; आडवी स्क्रोलबार लपवण्यासाठी
+    box-shadow: 1px 0px 5px #ccc; हलकी बॉर्डर/शॅडो
+    display: flex; नवीन: फ्लेक्सबॉक्स वापरून लेआउट व्यवस्थापित करा
+    flex-direction: column; नवीन: कंटेंट एकाखाली एक (column) ठेवा
+    align-items: flex-start; नवीन: कंटेंट डाव्या बाजूला संरेखित करा
+     margin-top: 70px; नवीन: नेव्हबारच्या उंचीइतका टॉप मार्जिन
+}
+*/ */
+{}
+
+
+
+
+
+
+
+
+
